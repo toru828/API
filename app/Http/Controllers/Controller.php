@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-//     public function register(Request $request)
+    // public function register(Request $request)
 // {
 //         // Here the request is validated. The validator method is located
 //         // inside the RegisterController, and makes sure the name, email
