@@ -13,7 +13,7 @@ class ArticleController extends Controller
      *
      * @return Article[]|\Illuminate\Database\Eloquent\Collection
      */
-    public function selectAll()
+    public function index()
     {
         return Article::all();
     }
@@ -22,7 +22,7 @@ class ArticleController extends Controller
      * @param Article $article
      * @return Article
      */
-    public function selectOneItem(Article $article)
+    public function show(Article $article)
     {
         return $article;
     }
@@ -35,7 +35,7 @@ class ArticleController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function insert(Request $request)
+    public function store(Request $request)
     {
         return Article::create($request->all());
     }
